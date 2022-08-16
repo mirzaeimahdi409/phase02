@@ -1,11 +1,9 @@
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import model.Employee;
+import model.employee.Employee;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
-import view.View;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +12,7 @@ import java.util.ArrayList;
 
 public class UnitTestView {
     @Test
-    public void testView() throws IOException, ParseException {
+    public void testView() throws IOException {
 
         Main.main(null);
         assertNotNull(Employee.getEmployees());

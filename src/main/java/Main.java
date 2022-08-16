@@ -1,7 +1,8 @@
-import java.text.ParseException;
 import view.View;
+
 public class Main {
-    public static void main(String[] args) throws ParseException {
-        View.view.run();
+    public static void main(String[] args) {
+        View view = View.getInstance();
+        view.run();
     }
 }
